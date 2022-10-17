@@ -1,0 +1,19 @@
+/*animations moving */
+.moving-icon-animation {
+  color: #333;
+  animation: shiver 2s infinite;
+}
+@keyframes shiver {
+  5% {
+    transform: rotate(10deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  15% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+}

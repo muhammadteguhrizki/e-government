@@ -1,0 +1,86 @@
+:root {
+  /* Font */
+  --mainfont: 'Poppins', sans-serif;
+}
+::selection {
+  background: #043e5f;
+  color: #fff;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+/* Navbar */
+nav .nav-item {
+  font-family: var(--mainfont);
+}
+nav .navbar-nav .nav-item {
+  position: relative;
+}
+@media (min-width: 992px) {
+  nav .navbar-nav .nav-item::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #0d6efd;
+    transition: 0.3s;
+  }
+  nav .navbar-nav .nav-item:hover::after {
+    width: 100%;
+  }
+}
+/* Navbar Akhir */
+.jumbotron .display-6 {
+  font-family: var(--mainfont);
+}
+.icon {
+  margin-top: 3.5rem;
+}
+.icon a {
+  margin: 0 10px;
+}
+
+/* Tampilan Mobile */
+@media (max-width: 995px) {
+  /* icon media sosial */
+  .img-fluid {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Tupoksi */
+@media (max-width: 768px) {
+  .tupoksi h4 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 492px) {
+  .tupoksi h4 {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 447px) {
+  .title .small-text {
+    font-size: 12px;
+  }
+}
+
+/* Scroll Top */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 5px;
+  font-size: 40px;
+  color: #ffc300;
+}
+.back-to-top:hover {
+  color: #a1810e;
+}
